@@ -1,5 +1,5 @@
 # minesweeper_remake
-a simple c++ minesweeper remake
+a simple c++ minesweeper remake with the option of shaders (recompilation required)
 
 ## ingame controls
 - Ctrl + 1 / 2 / 3 // to switch game mode
