@@ -29,7 +29,13 @@ int main() {
 	sf::Clock sf_clock;
 
 	sf::Shader shader;
+	// --- enable ONE for shaders
+	//shader.loadFromMemory(bloom_shader_frag_string, sf::Shader::Fragment);
+	//shader.loadFromMemory(chromatic_abberation_shader_frag_string, sf::Shader::Fragment);
 	//shader.loadFromMemory(crt_shader_frag_string, sf::Shader::Fragment);
+	//shader.loadFromMemory(empty_shader_frag_string, sf::Shader::Fragment);
+	//shader.loadFromMemory(film_grain_shader_frag_string, sf::Shader::Fragment);
+	//shader.loadFromMemory(vignetting_shader_frag_string, sf::Shader::Fragment);
 
 	// --- game Dificulty
 		// 0 - easy, 1 - intermediate, 2 - expert 
@@ -156,7 +162,6 @@ int main() {
 		};
 
 
-		//clock = sf_clock.getElapsedTime().asSeconds();
 		
 		sf::Sprite framebuffer(r_texture.getTexture());
 
@@ -164,6 +169,8 @@ int main() {
 		game.draw(r_texture, sprite);
 		r_texture.display();
 
+		// --- enable for shaders
+		//clock = sf_clock.getElapsedTime().asSeconds();
 		//shader.setUniform("u_time", clock);
 		//shader.setUniform("texture", r_texture.getTexture());
 		//shader.setUniform("u_resolution", sf::Vector2f{ (float)game_size[game_difficulty][0] * tileSize, (float)game_size[game_difficulty][1] * tileSize + game.gridOffset });
