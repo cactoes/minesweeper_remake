@@ -1,5 +1,5 @@
 # Minesweeper remake
-a simple c++ minesweeper remake with the option of shaders (recompilation required)
+a simple c++ minesweeper remake with the option of shaders (recompilation required) <br />
 might leak memory not sure tho
 
 ## Ingame controls
