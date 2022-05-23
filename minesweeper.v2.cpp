@@ -54,9 +54,8 @@ int main() {
 		sf::Event event;
 		while (window.pollEvent(event)) {
 			// -- window
-			if (event.type == sf::Event::Closed) {
+			if (event.type == sf::Event::Closed)
 				window.close();
-			};
 
 			if (!window.hasFocus())
 				continue;
