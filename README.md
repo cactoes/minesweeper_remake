@@ -6,5 +6,5 @@ a simple c++ minesweeper remake
 - Right click is set as default for chording
 - Clicking the face will reset the game
 
-# External libraries
+## External libraries
 - sfml 2.5.1
